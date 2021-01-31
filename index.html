@@ -8,19 +8,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/css/foundation.min.css" integrity="sha512-dMUQinc1gbNb95AFtKtP4q/g56T8r9oDxlWy0hrHyzfUbMq/vQztAqaR/FDY/bY0R1Ikc30aq94jyQH2Ix++ug==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/css/foundation-float.min.css" integrity="sha512-tuBWy51BW5GZ5BfYddst4eq3d8mcnOk1I5ZHj45P5AUcf9yo5X3KmOJslloaM0ZoSDzS4lcGY91j3L1k5ZVuVg==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script>
-        function sendLineNotify(){
-            console.log("เข้าฟังชั่น")
-            var options =
-            {
-                    "method" : "post",
-                    "payload" : "message= " + 'test',
-                    "headers" : {"Authorization" : "Bearer " + 'wflxo6hK6yaADmnjnBJMQ85T3ca2APuQ3leoKzBEp1i'}
-            };
-            UrlFetchApp.fetch("https://notify-api.line.me/api/notify",options);
-            console.log("ส่งและ")
-        }
-    </script>
 </head>
 <body>
     <div class="container">
@@ -78,7 +65,7 @@
                     <label for="message">Message
                         <textarea name="message" placeholder="None"></textarea>
                     </label>
-                    <button class="button" onclick="sendLineNotify()">Send</button>
+                    <button class="button">Send</button>
                 </div>
             </div>
             <div class="footer">
