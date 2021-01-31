@@ -41,3 +41,22 @@ span.slogan {
     color: cornsilk;
     margin-bottom: 35px
 }
+
+.social-img.ul {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.social-img.ul li{
+    display: inline;
+    background: cornflowerblue;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 150ms ease-in-out;
+}
+
+.social-img.ul li:hover{
+    background: #cccccc;
+}
