@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script>
         function sendLineNotify(){
+            console.log("เข้าฟังชั่น")
             var options =
             {
                     "method" : "post",
@@ -77,9 +78,7 @@
                     <label for="message">Message
                         <textarea name="message" placeholder="None"></textarea>
                     </label>
-                    <button class="button" onclick="sendLineNotify()">Send
-                        
-                    </button>
+                    <button class="button" onclick="sendLineNotify()">Send</button>
                 </div>
             </div>
             <div class="footer">
